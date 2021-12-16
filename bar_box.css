@@ -1,0 +1,131 @@
+.bar_box {
+  position: fixed;
+  background: #344346;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 100;
+}
+.bar_box.at_top {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: upin 0.5s both;
+          animation: upin 0.5s both;
+}
+@-webkit-keyframes upin {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes upin {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.bar_box .step_space {
+  width: 120px;
+  height: 4px;
+  margin-top: 30px;
+}
+.bar_box .step_space1 {
+  background: #eeaeaf;
+}
+.bar_box .step_space2 {
+  background: #81c4c9;
+}
+.bar_box .step_h3 {
+  display: inline-block;
+  color: white;
+  padding: 6px 16px;
+  margin-top: 10px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  font-weight: bold;
+  font-size: 20px;
+}
+.bar_box .step1 {
+  background: #eeaeaf;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.bar_box .step2 {
+  background: #81c4c9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.bar_box .step3 {
+  background: #d2ceaa;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.bar_box p {
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 8px 15px;
+  font-size: 17px;
+}
+.bar_box a {
+  border: none;
+  text-decoration: none;
+}
+.bar_box .step:hover .step1 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: #fa8c8e;
+}
+.bar_box .step:hover .step2 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: #529799;
+}
+.bar_box .step:hover .step3 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: #e8c774;
+}
+.bar_box .step:hover p.bar_p1 {
+  color: #fa8c8e;
+}
+.bar_box .step:hover p.bar_p2 {
+  color: #81C4C9;
+}
+.bar_box .step:hover p.bar_p3 {
+  color: #D2CEAA;
+}
+
+@media (max-width: 768px) {
+  .bar_box {
+    height: 80px;
+  }
+  .bar_box .step_h3 {
+    padding: 4px 14px;
+    font-size: 15px;
+  }
+  .bar_box p {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px;
+  }
+  .bar_box .step_space {
+    width: 80px;
+    height: 4px;
+    margin-top: 30px;
+  }
+}
