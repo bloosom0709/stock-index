@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.video {
+  padding: 50px;
+  background-color: #032E32;
+}
+
+.videobox {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.videobox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videobox embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video_intro {
+  color: white;
+  padding: 20px 0;
+}
+.video_intro h3 {
+  font-size: 20px;
+}
+.video_intro p {
+  font-size: 15px;
+}
+
+.menu_contanter {
+  padding: 0 20px;
+  height: 550px;
+  overflow-y: scroll;
+  border-top: solid 2.5px #EEAEAF;
+  border-bottom: solid 2.5px #EEAEAF;
+}
+
+.menu_contanter::-webkit-scrollbar {
+  /*滾動條整體樣式*/
+  padding-left: 15px;
+  width: 12px;
+  /*高寬分別對應橫豎滾動條的尺寸*/
+}
+
+.menu_contanter::-webkit-scrollbar-thumb {
+  /*滾動條裡面小方塊*/
+  border-radius: 10px;
+  background: #EEAEAF;
+}
+
+.menu_contanter1::-webkit-scrollbar-track {
+  /*滾動條裡面軌道*/
+  border-radius: 10px;
+  background: #EDEDED;
+}
+
+.video_menu {
+  padding-top: 15px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: #FFF;
+  border-bottom: 2px solid #EEAEAF;
+}
+.video_menu h4 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.video_menu:hover {
+  background-color: #EEAEAF;
+  color: #032E32;
+}
+
+.video_menu_pic {
+  width: 160px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+.video_menu_pic img {
+  width: 160px;
+}
+
+.menu_intro {
+  display: inline-block;
+}
+
+.video_click {
+  background-color: #EEAEAF;
+  color: #032E32;
+}
